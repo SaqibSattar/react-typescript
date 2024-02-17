@@ -1,13 +1,24 @@
-import React from 'react'
+import React from "react";
 
 type GreetProps = {
-    name: string;
-}
+  name: string;
+  messageCount: number;
+  isLoggedIn: boolean;
+};
 
 const Greet = (props: GreetProps) => {
   return (
-    <div>Welcome {props.name}.</div>
-  )
-}
+    <div>
+      <h2>
+        {
+            props.isLoggedIn 
+            ? `Welcome ${props.name}. You have ${props.messageCount} new messages.`
+            : `Welcom guest`
+        }
+        
+      </h2>
+    </div>
+  );
+};
 
-export default Greet
+export default Greet;
