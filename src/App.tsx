@@ -9,6 +9,7 @@ import Oscar from "./components/Oscar";
 import Button from "./components/Button";
 import Input from "./components/Input";
 import { Container } from "./components/Container";
+import LoggedIn from "./components/state/LoggedIn";
 
 function App() {
   // const personName = {
@@ -56,8 +57,9 @@ function App() {
       handleChange={(event) => {
         console.log('Value changed', event)
       }}
-      /> */}
-      <Container styles={{ border: '1px solid red', padding: '4px', color: 'green'}}/>
+      /> 
+      <Container styles={{ border: '1px solid red', padding: '4px', color: 'green'}}/> */}
+      <LoggedIn />
     </>
   );
 }
