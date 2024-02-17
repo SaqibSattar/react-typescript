@@ -8,6 +8,7 @@ import Heading from "./components/Heading";
 import Oscar from "./components/Oscar";
 import Button from "./components/Button";
 import Input from "./components/Input";
+import { Container } from "./components/Container";
 
 function App() {
   // const personName = {
@@ -44,7 +45,7 @@ function App() {
         Awards goes to Bruce Wayne
       </Heading>
       </Oscar>
-      <Greet name="Saqi" isLoggedIn={false} /> */}
+      <Greet name="Saqi" isLoggedIn={false} />
       <Button 
       handleClick={(event, id) => {
         console.log('Button Clicked', event, id)
@@ -55,7 +56,8 @@ function App() {
       handleChange={(event) => {
         console.log('Value changed', event)
       }}
-      /> 
+      /> */}
+      <Container styles={{ border: '1px solid red', padding: '4px', color: 'green'}}/>
     </>
   );
 }
