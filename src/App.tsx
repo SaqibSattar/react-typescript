@@ -12,6 +12,8 @@ import { Container } from "./components/Container";
 import LoggedIn from "./components/state/LoggedIn";
 import User from "./components/state/User";
 import Counter from "./components/state/Counter";
+import Box from "./components/context/Box";
+import { ThemeContextProvider } from "./components/context/ThemeContext";
 
 function App() {
   // const personName = {
@@ -62,8 +64,11 @@ function App() {
       /> 
       <Container styles={{ border: '1px solid red', padding: '4px', color: 'green'}}/>
       <LoggedIn />
-      <User /> */}
-      <Counter />
+      <User />
+      <Counter /> */}
+      <ThemeContextProvider>
+         <Box />
+      </ThemeContextProvider>
     </>
   );
 }
