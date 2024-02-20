@@ -21,6 +21,7 @@ import { CounterOne } from "./components/class/CounterOne";
 import { Private } from "./components/auth/Private";
 import { Profile } from "./components/auth/Profile";
 import { List } from "./components/generics/List";
+import { RandomNumber } from "./components/restriction/RandomNumber";
 
 function App() {
   // const personName = {
@@ -86,7 +87,7 @@ function App() {
         items={['Batman', 'Superman', 'Wonder Woman']}
         onClick={item => console.log(item)}
       />
-      <List items={[1, 2, 3]} onClick={item => console.log(item)} /> */}
+      <List items={[1, 2, 3]} onClick={item => console.log(item)} />
       <List
         items={[
           {
@@ -106,7 +107,8 @@ function App() {
           }
         ]}
         onClick={item => console.log(item)}
-      />
+      /> */}
+      <RandomNumber value={10} isPositive />
     </>
   );
 }
